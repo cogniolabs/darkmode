@@ -43,3 +43,7 @@ const options = {
 const darkmode = new Darkmode(options);
 darkmode.init();
 </code>
+
+## License
+
+Darkmode is released under MIT license. © 2024 CognioLabs

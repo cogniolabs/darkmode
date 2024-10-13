@@ -1,26 +1,39 @@
 {
     "name": "@cogniolabs/darkmode",
     "version": "1.0.0",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "files": [
-        "dist"
+    "description": "Darkmode is a lightweight, flexible, and user-friendly JavaScript plugin built with TypeScript.",
+    "author": "CognioLabs",
+    "license": "MIT",
+    "main": "dist/js/darkmode.js",
+    "types": "dist/js/index.d.ts",
+    "jsdelivr": "dist/js/darkmode.min.js",
+    "keywords": [
+        "dark mode",
+        "toggle dark mode",
+        "typescript"
     ],
+    "homepage": "https://cogniolabs.com/",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cogniolabs/darkmode.git"
+    },
+    "bugs": {
+        "url": "https://github.com/cogniolabs/darkmode/issues"
+    },
     "scripts": {
+        "develop": "node --watch src/js/darkmode.ts --out-dir dist/js",
         "build": "tsc"
     },
     "dependencies": {
         "easy-toggle-state": "^1.0.0"
     },
     "devDependencies": {
-        "typescript": "^4.0.0"
-    },
-    "keywords": [
-        "dark mode",
-        "toggle",
-        "javascript",
-        "typescript"
-    ],
-    "author": "CognioLabs",
-    "license": "MIT"
+        "autoprefixer": "^10.4.8",
+        "@babel/core": "^7.18.13",
+        "@babel/preset-env": "^7.18.10",
+        "babel-loader": "^8.2.5",
+        "postcss": "^8.4.16",
+        "sass": "^1.54.8",
+        "typescript": "^4.8.2"
+    }
 }
