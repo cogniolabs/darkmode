@@ -1,6 +1,6 @@
-# DarkMode Plugin
+# Darkmode Plugin
 
-DarkMode is a simple and feature-rich dark mode plugin for your website. It allows you to easily implement a dark mode toggle on your web pages, with customizable color schemes and options.
+Darkmode is a simple and feature-rich dark mode plugin for your website. It allows you to easily implement a dark mode toggle on your web pages, with customizable color schemes and options.
 
 ## Features
 
