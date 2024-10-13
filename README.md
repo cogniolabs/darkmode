@@ -17,7 +17,7 @@ You can install the DarkMode plugin using npm: `bash npm install @cogniolabs/dar
 ## Usage
 
 ```bash
-import Nightly from 'nightly-darkmode';
+import Darkmode from 'darkmode';
 
 const options = {
   enabled_switch: true,

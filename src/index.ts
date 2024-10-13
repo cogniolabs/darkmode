@@ -1,6 +1,6 @@
 import 'easy-toggle-state';
 
-export default class darkmode {
+export default class Darkmode {
     options: any;
     ls: Storage;
     button?: HTMLDivElement;
