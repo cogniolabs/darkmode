@@ -1,0 +1,26 @@
+{
+    "name": "@cogniolabs/darkmode",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc"
+    },
+    "dependencies": {
+        "easy-toggle-state": "^1.0.0"
+    },
+    "devDependencies": {
+        "typescript": "^4.0.0"
+    },
+    "keywords": [
+        "dark mode",
+        "toggle",
+        "javascript",
+        "typescript"
+    ],
+    "author": "CognioLabs",
+    "license": "MIT"
+}
