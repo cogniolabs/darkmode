@@ -40,6 +40,6 @@ const options = {
   switch_style: 'default-style',
 };
 
-const nightly = new Nightly(options);
-nightly.init();
+const darkmode = new Darkmode(options);
+darkmode.init();
 ```
