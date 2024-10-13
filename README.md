@@ -16,9 +16,9 @@ You can install the DarkMode plugin using npm: `bash npm install @cogniolabs/dar
 
 ## Usage
 
-```bash
 import Darkmode from 'darkmode';
 
+<code>
 const options = {
   enabled_switch: true,
   os_aware: '1',
@@ -42,4 +42,4 @@ const options = {
 
 const darkmode = new Darkmode(options);
 darkmode.init();
-```
+</code>
