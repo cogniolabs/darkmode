@@ -146,10 +146,10 @@ export default class Darkmode {
 					(position: GeolocationPosition) => {
 						const { latitude, longitude } = position.coords;
 						const date: Date = new Date();
-						const sunsetTime: Date = this.calculateSunset(
-							date,
+						const sunsetTime: Date = this.calculateSunsetSunrise(
 							latitude,
-							longitude
+							longitude,
+							date
 						);
 
 						if (date > sunsetTime && !this.isDarkMode()) {
@@ -166,11 +166,15 @@ export default class Darkmode {
 		setInterval(checkSunset, 60000); // Check every minute
 	}
 
-	private calculateSunset(date: Date, lat: number, lng: number): Date {
-		const januaryFirst: Date = new Date(date.getFullYear(), 0, 1);
-		const dayOfYear: number = Math.floor(
-			(date.getTime() - januaryFirst.getTime()) / 86400000
-		);
+	private calculateSunsetSunrise(
+		lat: number,
+		_lng: number,
+		date: Date
+	): Date {
+		// const januaryFirst: Date = new Date(date.getFullYear(), 0, 1);
+		// const _dayOfYear = Math.floor(
+		// 	(date.getTime() - januaryFirst.getTime()) / 86400000
+		// );
 		const sunsetHour: number = 18 - lat / 10;
 		return new Date(
 			date.getFullYear(),
