@@ -114,7 +114,7 @@ var Darkmode = /** @class */ (function () {
                 navigator.geolocation.getCurrentPosition(function (position) {
                     var _a = position.coords, latitude = _a.latitude, longitude = _a.longitude;
                     var date = new Date();
-                    var sunsetTime = _this.calculateSunset(date, latitude, longitude);
+                    var sunsetTime = _this.calculateSunsetSunrise(latitude, longitude, date);
                     if (date > sunsetTime && !_this.isDarkMode()) {
                         _this.toggle();
                     }
@@ -127,9 +127,11 @@ var Darkmode = /** @class */ (function () {
         checkSunset();
         setInterval(checkSunset, 60000); // Check every minute
     };
-    Darkmode.prototype.calculateSunset = function (date, lat, lng) {
-        var januaryFirst = new Date(date.getFullYear(), 0, 1);
-        var dayOfYear = Math.floor((date.getTime() - januaryFirst.getTime()) / 86400000);
+    Darkmode.prototype.calculateSunsetSunrise = function (lat, _lng, date) {
+        // const januaryFirst: Date = new Date(date.getFullYear(), 0, 1);
+        // const _dayOfYear = Math.floor(
+        // 	(date.getTime() - januaryFirst.getTime()) / 86400000
+        // );
         var sunsetHour = 18 - lat / 10;
         return new Date(date.getFullYear(), date.getMonth(), date.getDate(), sunsetHour, 0, 0);
     };
