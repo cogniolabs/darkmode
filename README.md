@@ -1,4 +1,4 @@
-# Darkmode.js
+# Darkmode
 
 Darkmode.js is a lightweight, flexible, and user-friendly JavaScript plugin built with TypeScript. It allows you to easily implement a dark mode toggle on your web pages, complete with customizable color schemes and multiple configuration options.
 
